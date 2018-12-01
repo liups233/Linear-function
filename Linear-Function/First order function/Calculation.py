@@ -8,6 +8,7 @@ def computing():
 k不能为0
             ''')
             continue  # 判断k是否为0
+
         if k.replace('.', '').isdigit():
             k = float(k)
             break  # 判断k是否为数字
@@ -74,7 +75,7 @@ while True:
     if mode2 == '1':
         continue
     elif mode2 == '2':
-        exit()
+        break
     else:
         while True:
             print('''
@@ -84,6 +85,7 @@ while True:
             if mode2 == '1':
                 break
             elif mode2 == '2':
-                exit()
+                break
             else:
                 continue
+        break
