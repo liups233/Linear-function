@@ -80,10 +80,10 @@ while True:
         while True:
             print('''
 只能输入1或2!
-                    ''')
+            ''')
             mode2 = input('继续计算输入1, 退出输入2: ')
             if mode2 == '1':
-                break
+                computing()
             elif mode2 == '2':
                 break
             else:
