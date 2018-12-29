@@ -22,8 +22,10 @@ k必须输入数字!
         b = input('输入b: ')
         if b.replace('.', '').isdigit():
             b = float(b)
-            break  # 判断b是否为数字
-
+            break  
+        if b.replace('-', '').isdigit():
+            b = float(b)
+            break  # 判断b是否为数字(包括负数)
         else:
             print('''
 b必须输入数字!
